@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TareaSemana2.Acceso">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="Black" Padding="15" CornerRadius="0">
+                <Label Text="LOGIN" HorizontalTextAlignment="Center" TextColor="White" FontSize="12"/>
+            </Frame>
+
+           
+            <Entry x:Name="txtusuario" Placeholder="Ingrese su usuario"/>
+            <Entry x:Name="txtpass" Placeholder="Ingrese su contraseña" IsPassword="True"/>
+            <Button x:Name="btnIngresar" Text="INGRESAR" Clicked="btnIngresar_Clicked"></Button>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TareaSemana2.MainPage">
+    <ScrollView>
+
+    <StackLayout>
+            <Label Text="USUARIO LOGUEADO COMO:" HorizontalTextAlignment="Center" TextColor="DarkRed" FontSize="12"/>
+            <Label x:Name="lblusuario" HorizontalTextAlignment="Center" TextColor="DarkSlateBlue" FontSize="13"/>
+            <Label x:Name="lblpass"/>
+            <Frame BackgroundColor="Black" Padding="15" CornerRadius="0">
+            <Label Text="Calcular Notas" HorizontalTextAlignment="Center" TextColor="White" FontSize="14"/>
+            </Frame>
+                
+        <Entry x:Name="txtnota1" Keyboard="Numeric" Placeholder="Ingrese Nota Seguimiento 1" TextChanged="txtnota1_TextChanged"/>
+        <Entry x:Name="txtexamen1" Keyboard="Numeric" Placeholder="Ingrese Nota Examen 1" TextChanged="txtexamen1_TextChanged"/>
+        <Button x:Name="btnSumar1" Text="Calc Parcial1" Clicked="btnSumar1_Clicked"/>
+        <Entry x:Name="txtparcial1" IsEnabled="False" Placeholder="Su nota Parcial 1 es:"/>
+        
+        
+        <Entry x:Name="txtnota2" Keyboard="Numeric" Placeholder="Ingrese Nota Seguimiento 2" TextChanged="txtnota2_TextChanged"/>
+        <Entry x:Name="txtexamen2" Keyboard="Numeric" Placeholder="Ingrese Nota Examen 2" TextChanged="txtexamen2_TextChanged"/>
+        <Button x:Name="btnSumar2" Text="calc Parcial2" Clicked="btnSumar2_Clicked"/>
+        <Entry x:Name="txtparcial2" IsEnabled="False" Keyboard="Numeric" Placeholder="Su nota Parcial 2 es:"/>
+
+            <Button x:Name="btnPromedio" Text="PROMEDIO FINAL" Clicked="btnPromedio_Clicked"/>
+            <Label Text="SU NOTA ES: "/>
+            <Entry x:Name="txttotal" IsEnabled="False"/>
+            <Label Text="USTED ESTA"/>
+            <Entry x:Name="txtestado" IsEnabled="False"/>
+
+        </StackLayout>
+</ScrollView>
+</ContentPage>

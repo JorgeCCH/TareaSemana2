@@ -26,7 +26,7 @@
         <Button x:Name="btnSumar2" Text="calc Parcial2" Clicked="btnSumar2_Clicked"/>
         <Entry x:Name="txtparcial2" IsEnabled="False" Keyboard="Numeric" Placeholder="Su nota Parcial 2 es:"/>
 
-            <Button x:Name="btnPromedio" Text="PROMEDIO FINAL" Clicked="btnPromedio_Clicked"/>
+            <Button x:Name="btnPromedio" Text="*PROMEDIO FINAL*" Clicked="btnPromedio_Clicked"/>
             <Label Text="SU NOTA ES: "/>
             <Entry x:Name="txttotal" IsEnabled="False"/>
             <Label Text="USTED ESTA"/>
